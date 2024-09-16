@@ -635,7 +635,7 @@ ADKinetix::ADKinetix(int deviceIndex, const char *portName)
                              (void *)&this->cameraContext->sensorResY);
 
                 setIntegerParam(ADMaxSizeX, this->cameraContext->sensorResX);
-                setIntegerParam(ADMaxSizeY, this->cameraContext->sensorResX);
+                setIntegerParam(ADMaxSizeY, this->cameraContext->sensorResY);
                 INFO_ARGS("Model: %s | Resolution: %dx%d", modelStr,
                           this->cameraContext->sensorResX, this->cameraContext->sensorResY);
 
